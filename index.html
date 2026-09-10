@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pousada Ubatuba Itaguá | Hospedagem em Ubatuba SP</title>
+    <!-- Link para a folha de estilo externa -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones externos (FontAwesome) para os botões e detalhes -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGAÇÃO SUPERIOR (FIXA) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Pousada Ubatuba Itaguá</a>
+            <ul class="nav-links">
+                <li><a href="#sobre">A Pousada</a></li>
+                <li><a href="#acomodacoes">Acomodações</a></li>
+                <li><a href="#reservar">Reservas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <a href="https://wa.me." target="_blank" class="btn-secundario">
+                <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- CABEÇALHO PRINCIPAL (HERO) -->
+    <header class="hero-section">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Sua casa de praia no Itaguá</h1>
+                <p>Conforto, tranquilidade e localização privilegiada no coração de Ubatuba.</p>
+                <div class="hero-buttons">
+                    <a href="#reservar" class="btn-principal">Simular Reserva</a>
+                    <a href="https://wa.me" target="_blank" class="btn-secundario">
+                        <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEÇÃO SOBRE A POUSADA -->
+    <section id="sobre" class="sobre-section">
+        <div class="container-padrao grid-dois-lados">
+            <div class="sobre-conteudo">
+                <span class="subtitulo">Bem-vindo</span>
+                <h2>Ideal para casais e famílias</h2>
+                <p>A <strong>Pousada Ubatuba Itaguá</strong> está localizada estrategicamente na Rua Tapajós, bem no bairro do Itaguá. Nosso ambiente é preparado para quem busca relaxar com conforto, atendimento atencioso e a praticidade de estar perto de tudo.Esta pousada modesta localizada em uma área residencial fica a 4 minutos de caminhada da praia mais próxima e da vida marinha no Aquário de Ubatuba. </p>
+                <div class="diferenciais">
+                    <div class="item-diferencial"><i class="fas fa-coffee"></i> Café da Manhã Incluso</div>
+                    <div class="item-diferencial"><i class="fas fa-parking"></i> Estacionamento Grátis</div>
+                    <div class="item-diferencial"><i class="fas fa-parking"></i> Horário de check-in: 14:00</div>
+                    <div class="item-diferencial"><i class="fas fa-parking"></i> Horário de check-out: 12:00</div>
+                    <div class="item-diferencial"><i class="fas fa-wifi"></i> Wi-Fi de Alta Velocidade</div>
+                    <div class="item-diferencial"><i class="fas fa-concierge-bell"></i> Serviço de Quarto Diário</div>
+                </div>
+            </div>
+            <div class="sobre-imagem">
+                <img src="./img/fachada2.jpg" alt="Fachada e Ambiente Pousada Ubatuba Itaguá">
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE ACOMODAÇÕES (SUÍTES) -->
+    <section id="acomodacoes" class="suites-section">
+        <div class="container-padrao">
+            <span class="subtitulo centro">Nossos Quartos</span>
+            <h2 class="titulo-centro">Acomodações Confortáveis</h2>
+            
+            <div class="cards-grid">
+                <!-- Suíte Casal -->
+                <div class="card-quarto">
+                    <div class="imagem-quarto">
+                        <img src="./img/quartocasal2.jpg" alt="Suíte Casal">
+                    </div>
+                    <div class="info-quarto">
+                        <h3>Suíte Casal Standard</h3>
+                        <p>Equipada com ar-condicionado, frigobar, TV de tela plana, guarda-roupa e banheiro privativo. Perfeita para casais.</p>
+                    </div>
+                </div>
+
+                <!-- Suíte Adaptada -->
+                <div class="card-quarto">
+                    <div class="imagem-quarto">
+                        <img src="./img/interior.jpg" alt="Suíte Adaptada">
+                    </div>
+                    <div class="info-quarto">
+                        <h3>Interior Pousada (Acessível)</h3>
+                        <p>Desenvolvida um espaço aconhegante no interior da pousada.</p>
+                    </div>
+                </div>
+
+                <!-- Suíte Quádrupla -->
+                <div class="card-quarto">
+                    <div class="imagem-quarto">
+                        <img src="./img/quarto familia.jpg" alt="Suíte Família">
+                    </div>
+                    <div class="info-quarto">
+                        <h3>Suíte Quádrupla Família</h3>
+                        <p>Espaço ideal para famílias. Configuração versátil com cama de casal e bicamas extras, ar-condicionado e frigobar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SISTEMA DE AGENDAMENTO E VERIFICAÇÃO -->
+    <section id="reservar" class="booking-section">
+        <div class="container-padrao">
+            <div class="box-reserva">
+                <h2>Verificar Disponibilidade</h2>
+                <p class="aviso-promo">💡 Planeje antecipadamente e consulte condições de desconto direto via atendimento!</p>
+                
+                <form id="reservaForm">
+                    <div class="reserva-inputs">
+                        <div class="grupo-input">
+                            <label for="checkin">Check-in</label>
+                            <input type="date" id="checkin" required>
+                        </div>
+                        <div class="grupo-input">
+                            <label for="checkout">Check-out</label>
+                            <input type="date" id="checkout" required>
+                        </div>
+                        <div class="grupo-input">
+                            <label for="quarto">Acomodação</label>
+                            <select id="quarto" required>
+                                <option value="" disabled selected>Escolha o quarto...</option>
+                                <option value="Suíte Casal Standard">Suíte Casal Standard</option>
+                                <option value="Suíte Adaptada">Suíte Adaptada</option>
+                                <option value="Suíte Quádrupla Família">Suíte Quádrupla Família</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-buscar">Consultar Período</button>
+                </form>
+
+                <!-- Feedback do script -->
+                <div id="mensagemFeedback" class="feedback-box"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ E CONTATOS -->
+    <footer id="contato" class="rodape">
+        <div class="container-padrao grid-rodape">
+            <div class="coluna-rodape">
+                <h3>Pousada Ubatuba Itaguá</h3>
+                <p>Sua melhor escolha custo-benefício em Ubatuba, próximo ao Shopping Porto Itaguá, Projeto Tamar e Aquário.</p>
+            </div>
+            <div class="coluna-rodape">
+                <h3>Contato</h3>
+                <p><i class="fab fa-whatsapp"></i> whatsapp: (12) 99247-7869</p>
+                <p><i class="fas fa-phone-alt"></i> Fixo: (12) 3832-5039</p>
+            </div>
+            <div class="coluna-rodape">
+                <h3>Localização</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Tapajós, 171<br>Barra da Lagoa, Ubatuba - SP</p>
+            </div>
+        </div>
+        <div class="direitos">
+            <p>&copy; 2026 Pousada Ubatuba Itaguá. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+ 
+    <!-- Script de lógica do site -->
+    <script src="script.js"></script>
+</body>
+</html>
