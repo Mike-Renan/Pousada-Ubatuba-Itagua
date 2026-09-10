@@ -106,6 +106,19 @@ h2 {
     gap: 8px;
     transition: transform 0.2s;
 }
+.link-whatsapp img {
+   height: 60px;
+   position: fixed;
+   right: 20px;
+   bottom: 20px;
+   transition: all 1s ease-in-out;
+     
+}
+.link-whatsapp img:hover{
+   transform: scale(1.09); 
+   transition: all 0.3s ease-in-out; 
+
+}
 
 .btn-nav-whatsapp:hover { transform: scale(1.05); }
 
@@ -151,7 +164,7 @@ h2 {
 .btn-secundario:hover { background-color: var(--whatsapp-green); border-color: var(--whatsapp-green); }
 
 /* SOBRE NÓS */
-.sobre-section { background-color:rgb(200, 223, 239); }
+.sobre-section { background-color:rgb(237, 237, 237); }
 .grid-dois-lados { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 50px; align-items: center; }
 .sobre-conteudo p { font-size: 1.1rem; color: #555; text-align: justify; margin-bottom: 30px; }
 
@@ -215,3 +228,17 @@ h2 {
     .grid-dois-lados { grid-template-columns: 1fr; }
     .container-padrao { padding: 50px 0; }
 }
+/* Remove a cor azul automática que os celulares colocam em números de telefone */
+footer a[href^="tel:"], 
+footer a[href^="mailto:"],
+.coluna-rodape p {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* Garante que links dentro do rodapé herdem a cor correta */
+.coluna-rodape p a {
+    color: #a4b3c2 !important; /* Cor cinza/clara padrão do seu rodapé */
+    text-decoration: none !important;
+}
+
