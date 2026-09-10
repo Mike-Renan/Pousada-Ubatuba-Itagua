@@ -151,7 +151,7 @@ h2 {
 .btn-secundario:hover { background-color: var(--whatsapp-green); border-color: var(--whatsapp-green); }
 
 /* SOBRE NÓS */
-.sobre-section { background-color: var(--light-sand); }
+.sobre-section { background-color:rgb(200, 223, 239); }
 .grid-dois-lados { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 50px; align-items: center; }
 .sobre-conteudo p { font-size: 1.1rem; color: #555; text-align: justify; margin-bottom: 30px; }
 
@@ -167,7 +167,7 @@ h2 {
 .card-quarto {
     background: var(--white);
     border: 1px solid rgba(0,0,0,0.08);
-    border-radius: 4px;
+    border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.02);
     transition: transform 0.3s;
